@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
             line-height: 1.6;
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #ffffff;
         }
 
@@ -37,204 +38,313 @@
 
 <h1>Privacy Policy for Last Delivery</h1>
 
-<p>Last updated: October 17, 2026</p>
+<p>Last updated: October 20, 2026</p>
 
 <p>
 Last Delivery is developed and published by Pica XR Studio.
-This Privacy Policy explains what information Last Delivery processes,
-why it is processed, how it is used, and how users can request deletion
-of information controlled by Pica XR Studio.
+This Privacy Policy explains what information the game collects,
+how that information is collected, why it is used, how it is stored,
+and how users can request deletion of their personal information.
 </p>
 
-<h2>Information We Process</h2>
+<h2>1. Information We Collect</h2>
 
 <p>
-Last Delivery processes only information necessary to operate the game,
-save local game progress, and provide access to purchased content.
-</p>
-
-<p>
-The game does not maintain a developer-operated account database
-and does not store Meta Horizon purchase records on a developer-operated server.
-</p>
-
-<h2>Meta Horizon In-App Purchase and Add-on Data</h2>
-
-<p>
-Last Delivery uses Meta Horizon Platform services to provide and verify access
-to the Casino Access add-on with the product identifier
-<strong>casino_unlock</strong>.
+Last Delivery collects and processes a limited amount of information
+necessary to operate the game, save gameplay progress, and verify
+access to purchased content.
 </p>
 
 <p>
-When Last Delivery checks ownership of the add-on or completes a purchase,
-Meta Horizon Platform services may provide the game with information related
-to that purchase or entitlement.
+The information collected by Last Delivery includes:
+</p>
+
+<ul>
+    <li>Meta Horizon in-app purchase and entitlement information;</li>
+    <li>purchase verification results and checkout information;</li>
+    <li>locally stored gameplay progress and settings;</li>
+    <li>information voluntarily provided through support emails.</li>
+</ul>
+
+<p>
+Last Delivery does not maintain a separate developer-operated
+account database or a server containing Meta Horizon purchase records.
+</p>
+
+<h2>2. Data Collected from Meta Horizon</h2>
+
+<p>
+Last Delivery uses Meta Horizon Platform services and the Meta Platform SDK
+to verify ownership of the Casino Access add-on
+(product identifier: casino_unlock).
 </p>
 
 <p>
-The specific information used by Last Delivery may include:
+When a player checks ownership of the add-on, restores purchased
+content, or completes a purchase, Last Delivery collects (receives)
+in-app purchase and entitlement data directly from Meta Horizon
+through the Meta Platform SDK.
+</p>
+
+<h3>Specific Data Collected</h3>
+
+<p>
+Last Delivery collects the following purchase-related information
+from Meta Horizon:
 </p>
 
 <ul>
     <li>
         <strong>Product identifier (SKU):</strong>
-        used to identify the purchased product, including
-        <strong>casino_unlock</strong>.
+        identifies the purchased add-on, including casino_unlock.
+        This allows the game to recognize which content the
+        purchase relates to.
     </li>
 
     <li>
-        <strong>Purchase or entitlement status:</strong>
-        used to determine whether the current user owns Casino Access
-        and whether the casino content should be unlocked.
+        <strong>Purchase and entitlement status:</strong>
+        indicates whether the current Meta Horizon account owns
+        the purchased content. The game uses this result to
+        determine whether Casino Access should be unlocked.
     </li>
 
     <li>
-        <strong>Purchase status:</strong>
-        used to determine whether a purchase was successfully completed.
+        <strong>Purchase verification results:</strong>
+        information returned by Meta Horizon when the game
+        requests confirmation of ownership. These results
+        are used to restore access to previously purchased content.
     </li>
 
     <li>
-        <strong>Purchase type:</strong>
-        used where provided by Meta to identify the type of purchased content.
+        <strong>Checkout results:</strong>
+        information indicating whether an attempted
+        in-app purchase was completed successfully.
+        This is used to update access to Casino Access.
     </li>
 
     <li>
-        <strong>Expiration information:</strong>
-        used where provided by Meta to determine whether an entitlement
-        is currently valid.
-    </li>
-
-    <li>
-        <strong>Checkout result and purchase-related error information:</strong>
-        used to refresh access after checkout and to display relevant
-        purchase errors to the user.
+        <strong>Purchase-related error information:</strong>
+        error results returned by Meta Horizon when a
+        purchase or ownership verification fails.
+        These results are used to inform the player
+        and handle unsuccessful purchase attempts.
     </li>
 </ul>
 
-<h2>How Purchase Information Is Used</h2>
+<p>
+The Meta Horizon purchase records accessed by the game can also
+contain purchase type and entitlement expiration information.
+Where those fields are returned and read by the game, they are
+used only to identify the purchase type and check whether
+the entitlement remains valid.
+</p>
+
+<h3>How Data Is Collected</h3>
 
 <p>
-The purchase and entitlement information described above is used only to:
+This information is collected automatically when Last Delivery
+communicates with Meta Horizon Platform services through
+the Meta Platform SDK.
+</p>
+
+<p>
+The information comes directly from Meta Horizon purchase
+and entitlement responses. Players do not need to manually
+enter personal information into the game to verify
+their purchase.
+</p>
+
+<h3>Why This Data Is Collected</h3>
+
+<p>
+The purchase and entitlement information is collected
+exclusively to:
 </p>
 
 <ul>
-    <li>verify ownership of Casino Access;</li>
-    <li>unlock purchased casino content;</li>
+    <li>identify the Casino Access add-on;</li>
+    <li>verify ownership of purchased content;</li>
+    <li>unlock the casino after a valid purchase;</li>
     <li>restore access to previously purchased content;</li>
-    <li>process and confirm purchases made through Meta Horizon;</li>
-    <li>display purchase-related errors when necessary.</li>
+    <li>confirm the result of an in-app purchase;</li>
+    <li>handle purchase and entitlement verification errors.</li>
 </ul>
 
 <p>
-Pica XR Studio does not use purchase or entitlement information for advertising,
-profiling, marketing, or selling personal information.
+Without this information, the game cannot reliably determine
+whether the current player owns Casino Access.
+</p>
+
+<h2>3. Storage and Retention of Purchase Data</h2>
+
+<p>
+The purchase and entitlement information received from Meta Horizon
+is processed temporarily by Last Delivery while the game is running.
 </p>
 
 <p>
-Last Delivery does not store the Meta Horizon purchase list or entitlement
-records in a developer-operated server or database.
-The game checks ownership through Meta Horizon Platform services when needed.
+The game uses the ownership verification result in memory
+to determine whether purchased content is available
+during the current gameplay session.
 </p>
 
 <p>
-Any temporary access or ownership result used by the game is used only
-to provide the purchased content during gameplay.
-</p>
-
-<h2>Payment Information</h2>
-
-<p>
-Purchases of Last Delivery and its add-ons are processed by Meta.
-When a user chooses to purchase Casino Access, the game uses
-Meta Horizon's checkout system.
+Pica XR Studio does not transmit Meta Horizon purchase
+or entitlement records to a developer-operated server.
+The game does not maintain a developer-operated database
+of users' purchases or entitlements.
 </p>
 
 <p>
-Pica XR Studio does not receive, collect, or store payment card numbers,
-bank account information, or other payment credentials.
-Payment processing is handled by Meta.
+Temporary purchase verification information held in memory
+is not retained by a developer-operated system after
+the gameplay session ends.
 </p>
 
 <p>
-Deleting Last Delivery or clearing the application's local data does not
-cancel a purchase or remove transaction records independently maintained by Meta.
+When necessary, Last Delivery requests updated purchase
+or entitlement information from Meta Horizon again.
 </p>
 
-<h2>Local Game Data</h2>
+<h2>4. Use and Sharing of Purchase Information</h2>
 
 <p>
-Last Delivery stores game progress and settings locally on the user's device.
-Local game data may include:
+Last Delivery uses the collected Meta Horizon purchase
+information only to provide in-app purchase functionality,
+verify purchased content, and unlock Casino Access.
+</p>
+
+<p>
+Pica XR Studio does not use this information for:
 </p>
 
 <ul>
-    <li>story progress;</li>
-    <li>inventory;</li>
-    <li>in-game currency;</li>
-    <li>game settings;</li>
+    <li>advertising;</li>
+    <li>profiling;</li>
+    <li>marketing;</li>
+    <li>selling personal information;</li>
+    <li>unrelated analytics or tracking.</li>
+</ul>
+
+<p>
+Pica XR Studio does not share purchase or entitlement
+information with third parties for advertising
+or profiling purposes.
+</p>
+
+<h2>5. Payment Information</h2>
+
+<p>
+Purchases of Last Delivery and its add-ons are processed
+through Meta Horizon's payment and checkout services.
+</p>
+
+<p>
+When a player purchases Casino Access, the payment
+is handled by Meta.
+</p>
+
+<p>
+Pica XR Studio does not collect, receive, or store
+credit card numbers, bank account information,
+or other payment credentials.
+</p>
+
+<p>
+Payment transactions and purchase records independently
+maintained by Meta are subject to Meta's own
+privacy and retention policies.
+</p>
+
+<h2>6. Local Game Data</h2>
+
+<p>
+Last Delivery collects and stores gameplay information
+locally on the user's device to save game progress
+and preferences.
+</p>
+
+<p>
+The locally collected information includes:
+</p>
+
+<ul>
+    <li>story and mission progress;</li>
+    <li>inventory information;</li>
+    <li>in-game currency balances;</li>
+    <li>gameplay settings;</li>
     <li>language preferences.</li>
 </ul>
 
 <p>
-This information is used only to restore game progress and preferences
-between gameplay sessions.
+This information is used to restore gameplay progress
+and user preferences between sessions.
 </p>
 
 <p>
-Local game data remains on the device until it is overwritten,
-reset, or deleted by the user.
+Local game data is stored on the user's device
+and remains there until it is overwritten,
+reset, or deleted.
 </p>
 
 <p>
-Platform backup functionality, if enabled by the user or platform,
-may independently retain or restore copies according to Meta's own
-backup settings and policies.
+Platform backup services, if enabled, may independently
+retain copies of this information according to
+Meta's backup policies.
 </p>
 
-<h2>Support Information</h2>
+<h2>7. Support Information</h2>
 
 <p>
-If a user contacts Pica XR Studio by email, Pica XR Studio receives
-the email address, message, and any information or attachments
-the user voluntarily provides.
-</p>
-
-<p>
-This information is used only to respond to the user's question,
-provide support, or process a privacy request.
+If a user contacts Pica XR Studio by email,
+we collect the email address, message content,
+and any information or attachments voluntarily
+included in that communication.
 </p>
 
 <p>
-Support correspondence is retained only as necessary to handle the request
-and comply with applicable legal obligations.
+This information is used only to respond to questions,
+provide support, or process privacy and deletion requests.
 </p>
 
-<h2>Sharing and Meta Horizon Platform Services</h2>
+<p>
+Support correspondence is retained only for as long
+as necessary to handle the request or meet
+applicable legal obligations.
+</p>
+
+<h2>8. Meta Horizon Platform Services</h2>
 
 <p>
 Last Delivery communicates with Meta Horizon Platform services
-when processing purchases and verifying ownership of purchased content.
+to access purchase verification and entitlement functionality.
 </p>
 
 <p>
-Pica XR Studio does not sell personal information and does not share
-purchase or entitlement information with third parties for advertising
-or profiling purposes.
+Meta independently collects and processes certain account,
+device, transaction, usage, and diagnostic information
+when users interact with its platform.
 </p>
 
 <p>
-Meta may independently process account, device, transaction,
-usage, and diagnostic information as part of operating the Meta Horizon platform.
-Meta's independent processing is governed by the
+Meta's independent data processing is governed by the
 <a href="https://www.meta.com/privacy/">Meta Privacy Policy</a>.
 </p>
 
-<h2 id="data-deletion">Data Deletion Requests</h2>
+<p>
+Pica XR Studio does not control Meta's independently
+maintained account or transaction databases.
+</p>
+
+<h2 id="data-deletion">9. How to Request Data Deletion</h2>
 
 <p>
-Users may request deletion of personal information controlled by
-Pica XR Studio by emailing:
+Users can request deletion of personal information
+collected and controlled by Pica XR Studio.
+</p>
+
+<p>
+To submit a data deletion request, send an email to:
 </p>
 
 <p>
@@ -244,76 +354,124 @@ grigorovalexey95@gmail.com
 </p>
 
 <p>
-Please use the subject:
+Use the email subject:
 <strong>Last Delivery - Data Deletion Request</strong>.
 </p>
 
 <p>
-The request should describe the information the user wants deleted.
-Users should not send passwords, payment card information,
-or other sensitive payment credentials.
+In the email, describe the personal information
+you would like Pica XR Studio to delete.
 </p>
 
 <p>
-If Pica XR Studio holds personal information associated with the request,
-it will be deleted where applicable and subject to applicable legal requirements.
-If Pica XR Studio does not hold any relevant personal information,
-the user will be informed.
+Do not include passwords, payment card numbers,
+or other sensitive payment information.
 </p>
 
 <p>
-Last Delivery does not maintain a developer-operated database containing
-Meta Horizon purchase or entitlement records.
-Therefore, Pica XR Studio may have no Meta Horizon purchase information
-stored independently to delete.
+If Pica XR Studio holds personal information associated
+with the request, we will delete it where applicable
+and subject to legal requirements.
 </p>
 
 <p>
-Purchase history, transaction records, Meta account information,
-and other records independently maintained by Meta are controlled by Meta.
-Requests concerning those records must be made through Meta's privacy,
-account, or support tools.
+If additional information is necessary to identify
+the relevant records or verify a request,
+we will request only the information necessary
+to complete that process.
 </p>
 
-<h2>Deleting Local Game Data</h2>
+<p>
+We will respond to the request and explain whether
+the requested information has been deleted,
+whether no relevant information is held,
+or whether specific information must be retained
+to comply with legal requirements.
+</p>
+
+<h3>Deletion of Meta Horizon Purchase Data</h3>
 
 <p>
-Users may delete locally stored Last Delivery game data by clearing
-the application's data or removing the application using the storage
-or application controls available on their Meta Quest device.
+Last Delivery does not maintain a developer-operated
+database containing Meta Horizon purchase
+or entitlement records.
+</p>
+
+<p>
+Purchase verification information received from Meta Horizon
+is used temporarily during gameplay and is not
+stored in a developer-operated database.
+</p>
+
+<p>
+As a result, Pica XR Studio may have no separately
+stored purchase information to delete.
+</p>
+
+<p>
+Purchase history, payment transactions, Meta account
+information, and other records independently maintained
+by Meta must be managed through Meta's own
+privacy and account controls or Meta support.
+</p>
+
+<h3>Deletion of Local Game Data</h3>
+
+<p>
+Users can delete locally stored Last Delivery game data
+by clearing the application's data or uninstalling
+the application using their Meta Quest device's
+application or storage controls.
 </p>
 
 <p>
 This removes locally stored game progress and settings.
-It does not delete purchases or transaction records maintained by Meta.
+If platform cloud backup is enabled, users may also
+need to manage or remove the corresponding backup
+through the platform's backup controls.
 </p>
 
-<h2>Advertising</h2>
+<p>
+Deleting local game data does not delete purchase
+transactions maintained independently by Meta.
+</p>
+
+<h2>10. Advertising</h2>
 
 <p>
 Last Delivery does not contain third-party advertising.
 </p>
 
-<h2>Children</h2>
-
 <p>
-Last Delivery is intended for users who meet the applicable minimum
-age requirements of the Meta Quest platform and the age rating assigned
-to the application.
+Information collected through Meta Horizon in-app purchase
+features is not used for targeted advertising.
 </p>
 
-<h2>Changes to This Privacy Policy</h2>
+<h2>11. Children's Privacy</h2>
 
 <p>
-This Privacy Policy may be updated when the game's functionality
-or data processing practices change.
-Any updated version will be published on this page.
+Last Delivery is intended for users who meet the
+applicable minimum age requirements of Meta Quest
+and the age rating assigned to the application.
 </p>
 
-<h2>Contact</h2>
+<h2>12. Changes to This Privacy Policy</h2>
 
 <p>
-For privacy questions, support requests, or data deletion requests, contact:
+Pica XR Studio may update this Privacy Policy
+when game functionality or data processing practices change.
+</p>
+
+<p>
+Any updated version will be published on this page
+with a revised update date.
+</p>
+
+<h2>13. Contact</h2>
+
+<p>
+For privacy questions, data deletion requests,
+or support, contact:
 </p>
 
 <p>
